@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&family=Ubuntu:wght@1300&family=Work+Sans:wght@700&display=swap');
 
 
+html { -moz-transform: scale(0.8, 0.8); zoom: 0.8; zoom: 80%; } 
 *{
     margin: 0;
     padding: 0;

@@ -17,11 +17,13 @@ body{
 /* nav  */
 
 nav{
-    padding: 40px 0;
+    padding: 40px 20px;
+    /* margin-right: 40px; */
     display: flex;
     justify-content: space-between;
     align-items:flex-end;
     background-color: #636C79;
+    width: 100%;
 }
 
 
@@ -38,17 +40,12 @@ nav{
     list-style: none;
     display: flex;
     gap:50px;
-    margin-left: 500px;
+    /* margin-left: 500px; */
     align-items: center;
     float: right;
-    
+    /* width: 100%; */
 }
 
-.list>li{
-    /* text-align: center; */
-    /* width: fit-content */
-
-}
 
 .nav-link{
     font-family: Calibri, 'Trebuchet MS', sans-serif;
@@ -57,6 +54,14 @@ nav{
     color: rgb(238, 238, 238);
     font-weight: 400;
 }
+li:hover
+{
+    transform: scale(1.1);
+}
+button:hover{
+    transform: scale(1.1);
+}
+
 
 
 
@@ -355,8 +360,9 @@ footer{
 }
 
 .footer-header>img{
-    filter: invert();
-    height:45px;
+    /* filter: invert(); */
+    /* height:45px; */
+    width: 150px;
 }
 
 .social-media{
@@ -406,5 +412,42 @@ footer{
 .f-content>li>h4{
     font-size: 22px;
 }
+.burger{
+    display: none;
+}
 
-
+@media screen and (max-width:800px) {
+    .nav-link{
+        display: none;
+    }
+    .intro{
+        flex-direction: column;
+    }
+    .nav-btn{
+        position: relative;
+        left: -100px;
+    }
+    .burger{
+        color: #fffefe;
+        font-size: 30px;
+        display: block;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .teams{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+    }
+    .footer-header{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
